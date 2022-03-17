@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const axios = require("axios");
+let port = process.env.PORT || 3000;
 
 console.log("outside class");
 
@@ -117,4 +118,6 @@ function call_endpoint() {
 }
 
 call_endpoint();
-app.listen(3000);
+app.listen(port, () => {
+  console.log("This API listening on port http://localhost:${port}");
+});
