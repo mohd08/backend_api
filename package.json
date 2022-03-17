@@ -2,7 +2,7 @@
   "name": "hostedapi",
   "version": "1.0.0",
   "description": "node api hosted on heroku",
-  "main": "source/server.ts",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon source/server.ts",
