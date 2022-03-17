@@ -6,11 +6,15 @@ let port = process.env.PORT || 3000;
 console.log("outside class");
 
 function call_endpoint() {
+  let count = 0;
   function delay(time) {
     return new Promise((resolve) => setTimeout(resolve, time));
   }
 
-  let count = 0;
+  app.get("/", async (req, res) => {
+    res.send("Hello World !");
+  });
+
   app.get("/stats", async (req, res) => {
     try {
       count += 1;
@@ -119,5 +123,5 @@ function call_endpoint() {
 
 call_endpoint();
 app.listen(port, () => {
-  console.log("This API listening on port http://localhost:${port}");
+  console.log("This API listening on port http://localhost:3000");
 });
