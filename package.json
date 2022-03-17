@@ -1,12 +1,10 @@
 {
-  "name": "hostedapi",
+  "name": "berad-api",
   "version": "1.0.0",
   "description": "node api hosted on heroku",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon source/server.ts",
-    "build": "rm -rf build/ && prettier --write source/ && tsc"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
