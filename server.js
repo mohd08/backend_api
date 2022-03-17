@@ -11,9 +11,9 @@ function call_endpoint() {
   }
 
   app.get("/", async (req, res) => {
-    res.send(
-      "Hi, welcome to BeRAD API :) \nPlease include endpoint to: \n 1- get news data (/news) \n 2- get top gain and lose data (/stats)"
-    );
+    text =
+      "Hi, welcome to BeRAD API :) \nPlease include endpoint to: \n 1- get news data (/news) \n 2- get top gain and lose data (/stats)";
+    res.send(text);
   });
 
   app.get("/stats", async (req, res) => {
