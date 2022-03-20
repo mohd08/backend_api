@@ -85,7 +85,7 @@ function call_endpoint() {
         });
 
         const connect = await axios.get(
-          "https://newsdata.io/api/1/news?apikey=pub_54444018c610e2326920beff18d7fa232280"
+          "https://newsdata.io/api/1/news?apikey=pub_54444018c610e2326920beff18d7fa232280&category=business"
         );
 
         connect.data.results.map((data) => {
